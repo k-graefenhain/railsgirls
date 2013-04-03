@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Railsgirls</title>
+  <!-- NOTE: wrong URL in the tutorial, therefore we download the bootstrap css -->
+  <!-- href="http://twitter.github.com/bootstrap/1.3.0/bootstrap.min.css" -->
+  <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.3.0/bootstrap.min.css">
+
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="fill">
+    <div class="container">
+      <a class="brand" href="/">The Idea app</a>
+      <ul class="nav">
+        <li class="active"><a href="/ideas">Ideas</a></li>
+        <li ><%= link_to 'New Idea', new_idea_path %></li>
+      </ul>
+      <div class="nav">
+        <% link_to "Sign in with Twitter", "/auth/twitter" %>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <%= yield %>
+</div>
+
+
+<footer>
+  <div class="container">
+    Rails Girls 2013
+  </div>
+</footer>
+
+</body>
+</html>
