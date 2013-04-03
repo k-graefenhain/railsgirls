@@ -9,7 +9,7 @@ gem 'carrierwave'
 
 # NOTE KG: don't add gem sqlite to production environment in order to push the app to heroku
 # see: http://stackoverflow.com/questions/13548040/errors-of-pushing-rails-app-to-heroku-error-occurred-while-installing-sqlite3-a
-group :development, :test do
+group :development do
   gem 'sqlite3'
 end
 
