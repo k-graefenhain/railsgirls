@@ -6,6 +6,7 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'carrierwave'
+gem 'foreigner'
 
 # NOTE KG: don't add gem sqlite to production environment in order to push the app to heroku
 # see: http://stackoverflow.com/questions/13548040/errors-of-pushing-rails-app-to-heroku-error-occurred-while-installing-sqlite3-a
